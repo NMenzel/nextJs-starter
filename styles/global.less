@@ -1,0 +1,260 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "~antd/lib/style/themes/default.less";
+@import "~antd/dist/antd.less";
+
+/* ANT DESIGN GLOBAL STYLES HACKS/
+//------------------------------------------------------
+/* ANT Date picker */
+.ant-picker {
+  width: 280px;
+}
+/* text Place holder */
+.ant-picker-input input {
+  color: rgb(92 92 92) !important;
+}
+.ant-picker-suffix {
+  color: rgb(92 92 92) !important;
+}
+.ant-picker-input > input::placeholder {
+  color: rgb(92 92 92) !important;
+}
+/* SELECT INPUT */
+.ant-select-item-option-content {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+.ant-select-item-option-active {
+  color: #fff !important;
+}
+.ant-select-item-option-selected {
+  color: #fff !important;
+}
+.ant-select-single.ant-select-lg:not(.ant-select-customize-input)
+  .ant-select-selector
+  .ant-select-selection-item {
+  line-height: 70px;
+}
+.ant-select-single.ant-select-lg:not(.ant-select-customize-input)
+  .ant-select-selector {
+  height: 70px;
+}
+
+/* SLIDER */
+.ant-tooltip-arrow {
+  display: none;
+}
+
+.ant-tooltip-inner {
+  color: #1b2a47;
+  background-color: #fff;
+  /* box-shadow: unset; */
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px 25px;
+  border-radius: 5px;
+}
+
+.ant-tooltip-inner:after {
+  content: "€";
+}
+.ant-slider-rail {
+  background-color: #9e9e9e;
+  height: 8px;
+}
+
+.ant-input-group-addon {
+  background-color: unset;
+  border-radius: unset;
+  border: unset;
+}
+
+@media only screen and (max-width: 768px) {
+  .ant-tooltip {
+    display: none;
+  }
+}
+
+/* ant-selector BTN */
+.ant-select-arrow {
+  color: #1b2a47 !important;
+  font-size: 14px;
+  margin-top: -7px;
+  right: 20px;
+}
+
+.ant-select-selector {
+  border-radius: 0.5rem;
+}
+// ANT DESIGN THEME VARS
+// ---
+@primary-color: #73a533;
+@body-background: #e5e5e5;
+// BTN
+// ---
+@btn-default-ghost-color:rgb (58, 165, 51, 0.6);
+// Select
+// ---
+@select-item-selected-color: rgb(58, 165, 51, 0.6);
+@select-item-selected-bg: #1b2a47;
+@select-item-active-bg: #1b2a47;
+@select-dropdown-height: 50px;
+// Checkbox
+// ---
+@checkbox-size: 17px;
+
+//* MY HACKS */
+//------------------------------------------------------
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* MODAL */
+.ant-modal-confirm-body .ant-modal-confirm-title {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+/* MY GLOBAL STYLES */
+//------------------------------------------------------
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html,
+body {
+  font-family: "Roboto", Helvetica Neue, sans-serif !important;
+  background-color: #e5e5e5 !important;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #1b2a47;
+}
+
+p {
+  margin: 0 0 16px;
+  letter-spacing: 0.5px;
+}
+
+/* Link */
+
+a {
+  font-size: 16px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0 0 16px;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  h6 {
+    font-size: 12px;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  h6 {
+    font-size: 12px;
+  }
+}
+
+//------------------------------------------------------
+/* MY CUSTOM STYLES */

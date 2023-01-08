@@ -1,7 +1,20 @@
 {
   "root": true,
-  "extends": ["next/core-web-vitals"],
-  "plugins": ["testing-library"],
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "next",
+    "prettier"
+  ],
+  "plugins": ["testing-library", "@typescript-eslint", "react-hooks"],
+  "rules": {
+    "semi": ["warn", "always"],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "jsx-a11y/role-supports-aria-props": "off"
+  },
   "overrides": [
     // Only uses Testing Library lint rules in test files
     {
