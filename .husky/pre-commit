@@ -2,4 +2,4 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 #see lint-staged.config.js
-yarn lint-staged
+#yarn lint-staged

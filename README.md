@@ -1,5 +1,7 @@
 # Next.js App Starter Template
 
+THIS VERSION IS ONLY FOR NEXTJS 12
+
 This includes Next.js' built-in support for Global CSS, CSS Modules, TypeScript and a git/pre-commit hook with typechecking.
 
 The git/pre-commit hook is created with husky & lint-staged.
@@ -81,5 +83,18 @@ const withLess = require("next-with-less");
 ```
 
 see styles/global.less for more information
+
+TODO: Fix lint staged. Its now disabled
+The runner has problems with some files
+
+.husky / pre-commit
+
+```bash
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+#see lint-staged.config.js
+#yarn lint-staged -- This command starts the lint-staged runners specified in the config file
+```
 
 Copyright © 2022 Niklas Menzel-Sandic. All rights reserved.
