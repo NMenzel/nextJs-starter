@@ -14,3 +14,18 @@ module.exports = {
   '**/*.(md|json)': (filenames) =>
     `yarn prettier --write ${filenames.join(' ')}`,
 }
+
+// ignore: [
+//   '**/__tests__/**',
+//   '**/*.test.js',
+
+//   '**/cypress/**',
+//   '**/node_modules/**',
+
+//   '**/.eslintrc.json',
+//   '**/.prettierrc.json',
+//   '**/.package.json',
+
+//   '**/*.config.js',
+//   '**/*.setup.js',
+// ],
