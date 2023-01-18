@@ -1,6 +1,6 @@
 # Next.js App Starter Template
 
-THIS VERSION IS ONLY FOR NEXTJS 12
+THIS VERSION IS ONLY FOR NEXTJS <= 12
 
 This includes Next.js' built-in support for Global CSS, CSS Modules, TypeScript and a git/pre-commit hook with typechecking.
 
